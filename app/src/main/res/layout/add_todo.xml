@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/TitleLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/TitleLabelText"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/time_picker_button"
+        android:layout_below="@+id/TitleLabel"
+        android:layout_marginTop="@dimen/topMarginAddToDo"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:labelFor="@+id/TitleLabel"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/statusLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="@dimen/topMarginAddToDo"
+        android:text="@string/statusLabelText"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:id="@+id/statusGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/statusLabel"
+        android:layout_marginTop="@dimen/topMarginAddToDo"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/statusDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/statusDoneText" />
+
+        <RadioButton
+            android:id="@+id/statusNotDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/statusNotDoneText" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/priorityLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/statusGroup"
+        android:layout_marginTop="@dimen/topMarginAddToDo"
+        android:text="@string/priorityLabelText"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:id="@+id/priorityGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/priorityLabel"
+        android:layout_marginTop="@dimen/topMarginAddToDo"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/lowPriority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/lowPriorityLabel" />
+
+        <RadioButton
+            android:id="@+id/medPriority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/medPriorityText" />
+
+        <RadioButton
+            android:id="@+id/highPriority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/highPriorityText" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/time_and_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/priorityGroup"
+        android:layout_marginTop="@dimen/topMarginAddToDo"
+        android:text="@string/timeAndDateLabelText"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/time_and_date"
+        android:layout_marginTop="@dimen/topMarginAddToDo" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/time_and_date"
+        android:layout_marginTop="@dimen/topMarginAddToDo" />
+
+    <Button
+        android:id="@+id/date_picker_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/date"
+        android:layout_marginTop="@dimen/topMarginAddToDo"
+        android:text="@string/btnChooseDateText" />
+
+    <Button
+        android:id="@+id/time_picker_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/date_picker_button"
+        android:layout_alignBottom="@+id/date_picker_button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/topMarginAddToDo"
+        android:text="@string/btnChooseTimeText" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/resetButton"
+        android:layout_alignBottom="@+id/resetButton"
+        android:layout_alignParentStart="true"
+        android:text="@string/cancelButtonText" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/resetButton"
+        android:layout_alignBottom="@+id/resetButton"
+        android:layout_alignEnd="@+id/time_picker_button"
+        android:layout_marginTop="@dimen/topMarginAddToDo3Buttons"
+        android:text="@string/submitButtonText" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:text="@string/btnResetText" />
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">ToDo Manager</string>
+    <string name="action_settings">Settings</string>
+    <string name="TitleLabelText">Title</string>
+    <string name="statusLabelText">Done</string>
+    <string name="statusDoneText">Done</string>
+    <string name="statusNotDoneText">Not Done</string>
+    <string name="priorityLabelText">Priority</string>
+    <string name="lowPriorityLabel">Low</string>
+    <string name="medPriorityText">Medium</string>
+    <string name="highPriorityText">High</string>
+    <string name="timeAndDateLabelText">Time and Date</string>
+    <string name="btnChooseDateText">Choose Date</string>
+    <string name="btnChooseTimeText">Choose Time</string>
+    <string name="cancelButtonText">Cancel</string>
+    <string name="submitButtonText">Submit</string>
+    <string name="btnResetText">Reset</string>
+    <string name="dateLabelText">Date</string>
+    <string-array name = "PriorityChoices">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+
+</resources>
